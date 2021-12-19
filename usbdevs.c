@@ -273,7 +273,7 @@ print_config(int fd, uint8_t addr, int config, bool quiet)
 
 	printf("addr %02u, config %02u: interfaces: %u, "
 	    "max-power: %umA", addr, cd.udc_desc.bConfigurationValue,
-	    cd.udc_desc.bNumInterface,
+	    cd.udc_desc.bNumInterfaces,
 	    cd.udc_desc.bMaxPower * UC_POWER_FACTOR);
 	printf("\n\t attr 0x%02x:", cd.udc_desc.bmAttributes);
 	if (cd.udc_desc.bmAttributes & UC_BUS_POWERED)
